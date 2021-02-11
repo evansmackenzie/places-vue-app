@@ -9,9 +9,9 @@
     <div>
       <div>
         Name: <input type="text" v-model="newPlaceName"> <br>
-        Address: <input type="text" v-model="newPlaceAddress"> <br>
+        Address: <input type="text" v-model="newPlaceAddress">
       </div>
-      <button v-on:click="createPlace">Create Place</button>
+      <button v-on:click="createPlace()">Create Place</button>
     </div>
 
     <div v-for="place in places" v-bind:key="place.id">
